@@ -90,11 +90,11 @@ puts ("Hello " + name + " you are " + age.to_s)
 
 puts "Addition Calculator"
 puts "Enter a number: "
-num1 = gets.chomp
+num1 = gets.chomp().to_f
 puts "Enter another number: "
-num2 = gets.chomp
+num2 = gets.chomp().to_f
 
-puts(num1.to_i + num2.to_i)
+puts(num1 + num2)
 
 ### Subrtraction
 
@@ -135,3 +135,32 @@ puts "Enter power: "
 num2 = gets.chomp
 
 puts(num1.to_i\*\*num2.to_i)
+
+## Mad Lib Game
+
+puts "Enter a random color"
+colors = gets.chomp().to_s
+
+puts "Enter a random flower"
+flower = gets.chomp().to_s
+
+puts "Enter a random celebrity"
+celebrity = gets.chomp().to_s
+
+puts ("Roses are " + colors)
+puts (flower +" are blue")
+puts ("That is why i love " + celebrity)
+
+## Arrays
+
+car_brands = Array["BMW", "Mercedes", "Adui", "Toyota", "Honda"]
+
+### Array wihtout initial info
+
+car_brands = Array.new
+
+car_brands[0] = "BMW"
+car_brands[1] = "Mercedes"
+car_brands[2] = "Adui"
+
+puts car_brands

@@ -1,2 +1,6 @@
 # ruby main.rb
 
+## Hashes
+
+
+
