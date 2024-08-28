@@ -7,8 +7,7 @@ puts "Hello World" # prtined out on a different line
 
 ### Draw trinagle
 
-`
-puts "        /|"
+`puts "        /|"
 puts "       / |"
 puts "      /  |"
 puts "     /   |"
@@ -164,3 +163,59 @@ car_brands[1] = "Mercedes"
 car_brands[2] = "Adui"
 
 puts car_brands
+
+## Hashes
+
+states = {
+:Yobe => "YB",
+1 => "MD",
+"Abuja" => "AB",
+}
+
+puts (states[:Yobe]) # output - YB
+puts (states[1]) # output - MD
+puts (states["Abuja"]) # output - AB
+
+## Methods
+
+def favouriteCarBrand(name, age)
+puts ("Hello " + name + "your are " + age)
+end
+
+favouriteCarBrand("alamin ", 19.to_s)
+
+### give default values
+
+def favouriteCarBrand(name="no name ", age=-1.to_s)
+puts ("Hello " + name + "your are " + age)
+end
+
+favouriteCarBrand
+
+## Return statement
+
+### mehtod to find the cube root of a number
+
+def cube(num)
+return num\*\*3
+end
+
+puts "Find the cube root of?"
+number = gets.chomp.to_i
+
+puts cube(number)
+
+## if and else statements
+
+isMale = true
+isTall = true
+
+if isMale & isTall
+puts "You are a tall male"
+elsif isMale & !isTall
+puts "You are a short male"
+elsif !isMale & isTall
+puts "You are a tall female"
+else
+puts "You are short female"
+end
