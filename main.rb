@@ -1,17 +1,28 @@
 # ruby main.rb
 
-## if and else statements
+## Improved calculator
 
-isMale = true
-isTall = true
+puts "Choose an operation (+,-,*,/)" 
+operation = gets.chomp()
 
-if isMale & isTall
-  puts "You are a tall male"
-elsif isMale & !isTall
-  puts "You are a short male"
-elsif !isMale & isTall
-  puts "You are a tall female"
-else
-  puts "You are short female"
+puts "Enter first number" 
+first_number = gets.chomp()
+
+puts "Enter second number" 
+second_number = gets.chomp()
+
+if operation == "+"
+  answer = first_number.to_i + second_number.to_i
+  puts (first_number.to_s + " + " + second_number.to_s + " = " + answer.to_s)
+elsif operation == "-"
+  answer = first_number.to_i - second_number.to_i
+  puts (first_number.to_s + " - " + second_number.to_s + " = " + answer.to_s)
+elsif operation == "*"
+  answer = first_number.to_i * second_number.to_i
+  puts (first_number.to_s + " * " + second_number.to_s + " = " + answer.to_s)
+elsif operation == "/"
+  answer = first_number.to_i / second_number.to_i
+  puts (first_number.to_s + " / " + second_number.to_s + " = " + answer.to_s)
+else 
+  puts "operator not supported"
 end
-
