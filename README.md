@@ -83,3 +83,55 @@ name = gets.chomp()
 puts "Enter you age: "
 age = gets.chomp()
 puts ("Hello " + name + " you are " + age.to_s)
+
+## Building a basic calculator
+
+### Addition
+
+puts "Addition Calculator"
+puts "Enter a number: "
+num1 = gets.chomp
+puts "Enter another number: "
+num2 = gets.chomp
+
+puts(num1.to_i + num2.to_i)
+
+### Subrtraction
+
+puts "Subrtraction Calculator"
+puts "Enter a number: "
+num1 = gets.chomp
+puts "Enter another number: "
+num2 = gets.chomp
+
+puts(num1.to_i - num2.to_i)
+
+### Multiplication
+
+puts "Multiplication Calculator"
+puts "Enter a number: "
+num1 = gets.chomp
+puts "Enter another number: "
+num2 = gets.chomp
+
+puts(num1.to_i \* num2.to_i)
+
+### Division
+
+puts "Division Calculator"
+puts "Enter a number: "
+num1 = gets.chomp
+puts "Enter another number: "
+num2 = gets.chomp
+
+puts(num1.to_f / num2.to_f)
+
+### Raise number to power
+
+puts "Division Calculator"
+puts "Enter a number: "
+num1 = gets.chomp
+puts "Enter power: "
+num2 = gets.chomp
+
+puts(num1.to_i\*\*num2.to_i)
