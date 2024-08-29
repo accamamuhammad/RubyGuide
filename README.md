@@ -232,13 +232,13 @@ puts "Enter second number"
 second_number = gets.chomp()
 
 if operation == "+"
-answer = first_number.to_i + second_number.to_i
+answer = first*number.to_i + second_number.to_i
 puts (first_number.to_s + " + " + second_number.to_s + " = " + answer.to_s)
 elsif operation == "-"
 answer = first_number.to_i - second_number.to_i
 puts (first_number.to_s + " - " + second_number.to_s + " = " + answer.to_s)
-elsif operation == "_"
-answer = first_number.to_i _ second_number.to_i
+elsif operation == "*"
+answer = first*number.to_i * second_number.to_i
 puts (first_number.to_s + " \* " + second_number.to_s + " = " + answer.to_s)
 elsif operation == "/"
 answer = first_number.to_i / second_number.to_i
@@ -246,3 +246,28 @@ puts (first_number.to_s + " / " + second_number.to_s + " = " + answer.to_s)
 else
 puts "operator not supported"
 end
+
+## Case expressions - special type of if statement
+
+def get_day_name(day)
+day_name = ""
+
+case day
+when "mon"
+day_name = "Monday"
+when "tue"
+day_name = "Tuesday"
+when "wed"
+day_name = "Wednesday"
+when "thur"
+day_name = "Thusday"
+when "fri"
+day_name = "Friday"  
+ else
+day_name = "Invalid keyword"
+end
+
+return day_name
+end
+
+puts get_day_name("thur")
